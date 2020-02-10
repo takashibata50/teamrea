@@ -1,0 +1,736 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="内定,就活,有料企業,人気,エージェント,面接">
+	<meta name="description" content="早期から就活のための実践経験をつみたいというそこのあなたに、社長や人事と選考対策ができる就活イベント『ジョブチャレ2021』をご紹介します。">
+	<title>【ジョブチャレ2021】早期から社長や人事と選考対策できる就活イベント</title>
+	<meta property="og:title" content="【ジョブチャレ2021】早期から社長や人事と選考対策できる就活イベント">
+	<meta property="og:type" content="blog">
+	<meta property="og:url" content="https://job-commit.com/employ/event/062/">
+	<meta property="og:image" content="https://job-commit.com/employ/event/062/img/twitter.png">
+	<meta property="og:description" content="早期から就活のための実践経験をつみたいというそこのあなたに、社長や人事と選考対策ができる就活イベント『ジョブチャレ2021』をご紹介します。">
+	<meta property="og:site_name" content="内定獲得ならジョブコミット｜株式会社リアステージ">
+
+	<meta name="twitter:title" content="【ジョブチャレ2021】早期から社長や人事と選考対策できる就活イベント" />
+	<meta name="twitter:description" content="早期から就活のための実践経験をつみたいというそこのあなたに、社長や人事と選考対策ができる就活イベント『ジョブチャレ2021』をご紹介します。" />
+  <meta name="twitter:image" content="https://job-commit.com/employ/event/062/img/twitter.png" />
+  <meta name="twitter:url" content="https://job-commit.com/employ/event/062/" />
+  <meta name="twitter:card" content="summary_large_image" />
+	<link rel=”canonical” href=”https://job-commit.com/employ/event/062/”>
+
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.steps.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.steps.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/messages_ja.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			// #で始まるアンカーをクリックした場合に処理
+			$('a[href^=#]').click(function() {
+				// スクロールの速度
+				var speed = 400; // ミリ秒
+				// アンカーの値取得
+				var href = $(this).attr("href");
+				// 移動先を取得
+				var target = $(href == "#" || href == "" ? 'html' : href);
+				// 移動先を数値で取得
+				var agent2 = navigator.userAgent;
+				var position = target.offset().top;
+				// スムーススクロール
+				$('body,html').animate({
+					scrollTop: position
+				}, speed, 'swing');
+				return false;
+			});
+		});
+		var agent = navigator.userAgent;
+		if (agent.search(/iPhone/) != -1 || agent.search(/Android/) != -1) {
+			$(function() {
+					var form = $("#mainform");
+					form.validate({
+						errorPlacement: function errorPlacement(error, element) {
+							element.after(error);
+						},
+						rules: {},
+						errorPlacement: function(err, elem) {
+							err.appendTo($('p.err')); //p要素を指定
+						},
+						messages: {
+							月: "月を入力して下さい",
+							日: "日を入力して下さい",
+							お名前: "お名前を入力して下さい",
+							学校名: "学校名を入力して下さい",
+							お電話: "お電話番号を入力して下さい",
+							メールアドレス: "メールアドレスを入力して下さい",
+						}
+					});
+					$("#wizard").steps({
+						headerTag: "h2",
+						bodyTag: "section",
+						transitionEffect: "slideLeft",
+						titleTemplate: '#title#',
+						labels: {
+							next: "<img src=\"img/fnexts.png\">",
+							previous: "<img src=\"img/back.png\">",
+							finish: "<img src=\"img/submits.png\">"
+						},
+						onStepChanging: function(event, currentIndex, newIndex) {
+							form.validate().settings.ignore = ":disabled,:hidden";
+							return form.valid();
+						},
+						onFinished: function(event, currentIndex) {
+							$("#mainform").submit();
+						}
+					});
+				});
+			$(function() {
+				var showFlag = false;
+				var pageTop = $('#page-top');
+				pageTop.css('bottom', '-500px');
+				var Ftcv = $('#ft_cv');
+				Ftcv.css('bottom', '-200px');
+				var showFlag = false;
+				//スクロールが400に達したらボタン表示
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 800) {
+						if (showFlag == false) {
+							showFlag = true;
+							pageTop.stop().animate({
+								'bottom': '0'
+							}, 500);
+							Ftcv.stop().animate({
+								'bottom': '0'
+							}, 500);
+						}
+					} else {
+						if (showFlag) {
+							showFlag = false;
+							pageTop.stop().animate({
+								'bottom': '-100px'
+							}, 200);
+							Ftcv.stop().animate({
+								'bottom': '-200px'
+							}, 200);
+						}
+					}
+				});
+			});
+			$(function() {
+				$('#voice ul.slider.sp').bxSlider({
+				});
+			});
+		} else {		//PC
+			$(function() {
+				var showFlag = false;
+				var pageTop = $('#page-top');
+				pageTop.css('bottom', '-100px');
+				var Ftcv = $('#ft_cv');
+				Ftcv.css('bottom', '-200px');
+				var showFlag = false;
+				//スクロールが400に達したらボタン表示
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 800) {
+						if (showFlag == false) {
+							showFlag = true;
+							pageTop.stop().animate({
+								'bottom': '0'
+							}, 500);
+							Ftcv.stop().animate({
+								'bottom': '0'
+							}, 500);
+						}
+					} else {
+						if (showFlag) {
+							showFlag = false;
+							pageTop.stop().animate({
+								'bottom': '-200px'
+							}, 200);
+							Ftcv.stop().animate({
+								'bottom': '-200px'
+							}, 200);
+						}
+					}
+				});
+			});
+			$(function() {
+					var form = $("#mainform");
+					form.validate({
+						errorPlacement: function errorPlacement(error, element) {
+							element.after(error);
+						},
+						rules: {},
+						errorPlacement: function(err, elem) {
+							err.appendTo($('p.err')); //p要素を指定
+						},
+						messages: {
+							月: "月を入力して下さい",
+							日: "日を入力して下さい",
+							お名前: "お名前を入力して下さい",
+							学校名: "学校名を入力して下さい",
+							お電話: "お電話番号を入力して下さい",
+							メールアドレス: "メールアドレスを入力して下さい",
+						}
+					});
+					$("#wizard").steps({
+						headerTag: "h2",
+						bodyTag: "section",
+						transitionEffect: "slideLeft",
+						titleTemplate: '#title#',
+						labels: {
+							next: "<img src=\"img/fnext.png\">",
+							previous: "<img src=\"img/back.png\">",
+							finish: "<img src=\"img/submit.png\">"
+						},
+						onStepChanging: function(event, currentIndex, newIndex) {
+							form.validate().settings.ignore = ":disabled,:hidden";
+							return form.valid();
+						},
+						onFinished: function(event, currentIndex) {
+							$("#mainform").submit();
+						}
+					});
+				});
+			$(function() {
+				$('#voice ul.slider.pc').bxSlider({
+				});
+			});
+		}
+	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-N2G8TMV');</script>
+	<!-- End Google Tag Manager -->
+	</head>
+<body>
+	<a class="anchor" name="header" id="header"></a>
+	<div id="fv">
+		<div class="innr">
+			<div class="content">
+				<div id="txt">
+					<figure class="logo"><img src="img/logo.png" alt="内定にコミットする就活サービス ジョブコミット 新卒"></figure>
+					<!-- <h1><span class="mnt">社長</span>や<span class="mnt">人事責任者</span>と<br><span class="mnt">選考対策</span>ができる<br>就活イベント</h1>
+					<figure class="txt"><img src="img/fv_txt.png" alt="就活相談に本気で向き合ってくれる会社 新卒紹介No,1"></figure> <span class="kome">※実査委託先：楽天リサーチ　2017年10月サイト評価に関する調査</span> -->
+					<img src="img/famous.png" alt="人気企業" class="sp famous">
+				</div>
+				<div id="stepform">
+					<div class="ttl">
+						<img src="img/30sec.png" alt="30秒で登録完了お悩み解決！無料カウンセリング" class="pc">
+						<img src="img/30secs.png" alt="30秒で登録完了お悩み解決！無料カウンセリング" class="sp">
+					</div>
+					<form method="post" id="mainform" action="./mail.php">
+						<div id="wizard">
+							<h2>STEP 1</h2>
+							<section>
+								<ul>
+									<li class="date"><strong>参加希望日<span>※必須</span></strong>
+										<select name="時間帯" id="select2">
+                      <option value="2/10(月)【理系限定】 14:30-19:30">2/10(月)【理系限定】 14:30-19:30</option>
+                      <option value="2/13(木)【ベンチャー限定】 14:30-19:30">2/13(木)【ベンチャー限定】 14:30-19:30</option>
+                      <option value="2/15(土)【サービス職限定】 13:00-18:00">2/15(土)【サービス職限定】 13:00-18:00</option>
+                      <option value="2/18(火) 14:30-19:00">2/18(火) 14:30-19:30</option>
+                      <option value="2/19(水)【男性限定】 14:30-19:30">2/19(水)【男性限定】 14:30-19:30</option>
+                      <option value="2/20(木) 14:30-19:30">2/20(木) 14:30-19:30</option>
+                      <option value="2/22(土) 13:00-18:00">2/22(土) 13:00-18:00</option>
+                      <option value="2/23(日) 【注：大阪開催】13:00-18:00">2/23(日) 13:00-18:00</option>
+                      <option value="2/24(月) 【注：大阪開催】13:00-18:00">2/24(月) 13:00-18:00</option>
+                      <option value="2/26(水) 14:30-19:30">2/26(水) 14:30-19:30</option>
+                      <option value="2/27(木)【IT限定】 14:30-19:30">2/27(木)【IT限定】 14:30-19:30</option>
+                      <option value="2/29(土) 13:00-18:00">2/29(土) 13:00-18:00</option>
+										</select>
+									</li>
+								</ul>
+								<a href="https://goo.gl/maps/FgkhMFdq9qmyGjPm7" target="_blank" class="map">半蔵門駅から徒歩5分<img src="img/map.png" alt="MAP"></a>
+							</section>
+							<h2>STEP 2</h2>
+							<section>
+								<ul>
+									<li><strong>お名前<span>※必須</span></strong>
+										<input type="text" name="お名前" placeholder="例）山田 太郎" required>
+									</li>
+									<li><strong>学校名<span>※必須</span></strong>
+										<input type="text" name="学校名" placeholder="入力して下さい" required>
+									</li>
+									<!-- <li><strong>卒業年度</strong>
+										<select name="卒業年度" id="select2">
+										<option value="20卒">20卒</option>
+										<option value="21卒">21卒</option>
+										<option value="22卒">22卒</option>
+									</li> -->
+								</ul>
+							</select>
+								<p class="err"></p>
+							</section>
+							<h2>STEP 3</h2>
+							<section>
+								<ul>
+									<li><strong>お電話<span>※必須</span></strong>
+										<input type="text" name="お電話" size="9" placeholder="080-1234-5678" required="">
+									</li>
+									<li><strong>メールアドレス<span>※必須</span></strong>
+										<input type="email" name="メールアドレス" placeholder="入力して下さい" required="">
+									</li>
+								</ul>
+								<p class="err"></p>
+								<div class="pp"><a href="https://www.reastage.co.jp/privacy-policy.html" target="_blank">※プライバシーポリシー</a>に同意が必要です。</div>
+							</section>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="top">
+		<h2>なぜ早期から人事相手に<br class="sp">選考対策ができるのか</h2>
+		<div class="detail">
+			<div class="inline-block">
+				<h3>就活の早期化</h3>
+		    <p>20卒の内定率が過去最高となったことから、21卒の就活も早期化になることが予想されてます。そのため企業も優秀層を採用するために早い段階から採用活動を実施しております。</p>
+			</div>
+			<div class="inline-block">
+				<h3>内定直結型イベント</h3>
+		    <p>ジョブチャレは内定直結型就活イベントのため、企業も21卒の就活生を採用するために社長や人事責任者が参加し、その場で選考を実施しております。</p>
+			</div>
+		</div>
+	</div>
+	<div id="reason">
+		<h2><img src="img/reason_ttl.svg" alt="Reason for Choice">ジョブチャレの特徴</h2>
+		<ul>
+			<li>
+				<p><strong>採用決定権のある<br><span>社長</span>や<span>人事責任者</span>が参加</strong>
+					ジョブチャレに参加する企業は採用決定権のある<br class="pc">社長や人事責任者が参加されます。企業の採用決<br class="pc">定権者に直接選考を実施してもらえるのはジョブ<br class="pc">チャレならではです。今後、就活に役立つ経験が<br class="pc">ジョブチャレではすることができます。</p>
+			</li>
+			<li>
+				<p><strong>参加企業独自の<br><span>グループワーク</span>を体験できる</strong>ジョブチャレのグループワークは参加企業が独自に考え<br class="pc">たテーマで行います。選考で使われているテーマもござ<br class="pc">いますので、一足先に就活の選考を経験することができ<br class="pc">ます。</p>
+			</li>
+			<li>
+				<p><strong>あなたの実力が知れる！<br>その場で企業から特別オファー</strong>ジョブチャレは選考直結型のイベントのため、あ<br class="pc">なたのイベント中の評価次第で企業からオファー<br class="pc">を獲得することができます。オファーの内容は選<br class="pc">考パス権だけでなく、その場で内定獲得すること<br class="pc">もございます。早期から本番さながらの面接がで<br class="pc">きるため、他のライバルとの差をつけることがで<br class="pc">きます。</p>
+			</li>
+		</ul>
+		<h3>だから早期から<br class="sp"><span>人事相手に選考対策</span>が可能</h3>
+	</div>
+	<div id="steps">
+		<h2><img src="img/step_ttl.svg" alt="Step to Tentative Decision">イベント後のサポート</h2>
+		<ul>
+			<li>
+				<figure><img src="img/step1.png"></figure>
+				<div>
+					<strong><img src="img/step1.svg" alt="Step 01">その場でオファーがもらえなくても後日オファーを獲得する可能性あり </strong>
+					<p>イベント中は1企業様5名までしかオファーを出すことができません。そのため、イベント中にオファーがなくても、企業様があなたのことを気になっていれば後日に直接オファーが届くこともあります。</p>
+				</div>
+			</li>
+			<li class="ar">
+				<!-- <img src="img/gt.png" alt=">" class="pc"><img src="img/gts.png" alt=">" class="sp"> -->
+			</li>
+			<li>
+				<figure><img src="img/step2.png"></figure>
+				<div>
+					<strong><img src="img/step2.svg" alt="Step 02">5つのグループワークを体験できるため、今後の就活に役立つ経験ができる</strong>
+					<p>他の就活イベントでは体験できないような5つのグループワークを経験することができます。そのため、あなたの今後に役立つ経験ができるため、あなたの第一志望の選考通過率をアップさせる可能性があります。</p>
+				</div>
+			</li>
+			<li class="ar">
+				<!-- <img src="img/gt.png" alt=">" class="pc"><img src="img/gts.png" alt=">" class="sp"> -->
+			</li>
+			<li>
+				<figure><img src="img/step3.png"></figure>
+				<div>
+					<strong><img src="img/step3.svg" alt="Step 03">希望者限定で、プロのコンサルタントがあなたの就活をサポート</strong>
+					<p>希望する方限定でプロの就活コンサルタントと後日面談し、就活に関するアドバイスをもらうことができます。年間1000名以上の就活生をサポートしているプロのコンサルタントがあなたの就活をサポートいたしますので、あなたの今後の就活に役立つこと間違いなしです。</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="company" class="pc">
+		<h2>参加企業例</h3>
+		<!-- https://haniwaman.com/flexbox/ -->
+		<div class="items3">
+		  <div class="item">
+		    <div class="item-img"><img src="img/companyA.png" alt=""></div>
+		    <div class="item-body">
+		      <h3>大手総合商社のグループ会社A社</h3>
+		      <p>総合商社グループ会社でBtoC、BtoBの商材を扱う企業になります。大手総合商社を母体に持つため、年間休日120日以上、平均月間残業時間20時間と福利厚生も整っております。安定した経営をもとに今後も事業展開を続けていく企業になります。</p>
+		    </div>
+		  </div><!-- /.item -->
+		  <div class="item">
+		    <div class="item-img"><img src="img/companyB.png" alt=""></div>
+		    <div class="item-body">
+					<h3>アパレル企業B社</h3>
+		      <p>made in Japanにこだわるアパレル企業のB社は、ファーストリテイリングの柳井社長から誘われユニクロの拡大に携わった敏腕社長が設立した会社になります。設立5期目で現在11店舗の運営を行っております。B社の一番の強みはユーザーに合わせた商品の提供を行ったことによつリピート率70%以上というB社のファンの多さです。今後もファンを大切にしながら事業の拡大をし続けていく企業になります。</p>
+		    </div>
+		  </div><!-- /.item -->
+		  <div class="item">
+		    <div class="item-img"><img src="img/companyC.png" alt=""></div>
+		    <div class="item-body">
+					<h3>特殊商材を扱う営業会社C社</h3>
+		      <p>単価100万円以上の商材を扱う上場企業のC社は日本の文化水準の向上を行っています。また扱う商材が特殊であるため真の営業力を問われるビジネスを行う必要があるので、入社後あなたのビジネススキルが向上すること間違い無しの企業になります。</p>
+		    </div>
+		  </div><!-- /.item -->
+		  <div class="item">
+		    <div class="item-img"><img src="img/companyD.png" alt=""></div>
+		    <div class="item-body">
+					<h3>医薬・化粧品会社D社</h3>
+		      <p>調剤薬局業界No.1のD社は産休取得率100%の女性が働きやすい会社になります。プロデュースからお客様の提案まで全て行い、現在売上高2000億以上の会社です。今後も次代のニーズに合わせて進化し続け、さらに社員の働き方改革にも力を入れていきます。</p>
+		    </div>
+		  </div><!-- /.item -->
+		</div><!-- /.items3 -->
+	</div>
+	<div id="company" class="sp">
+		<h2>参加企業例</h3>
+		<!-- https://haniwaman.com/flexbox/ -->
+		<div class="items3">
+		  <div class="item">
+		    <div class="item-img">
+					<h3>大手総合商社のグループ会社A社</h3>
+					<img src="img/companyA.png" alt="">
+				</div>
+		    <div class="item-body">
+		      <p>総合商社グループ会社でBtoC、BtoBの商材を扱い企業になります。大手総合商社を母体に持つため、年間休日120日以上、平均月間残業時間20時間と福利厚生も整っております。安定した経営をもとに今後も事業展開を続けていく企業になります。</p>
+		    </div>
+		  </div><!-- /.item -->
+		  <div class="item">
+		    <div class="item-img">
+					<h3>アパレル企業B社</h3>
+					<img src="img/companyB.png" alt="">
+				</div>
+		    <div class="item-body">
+		      <p>made in Japanにこだわるアパレル企業のB社は、ファーストリテイリングの柳井社長から誘われユニクロの拡大に携わった敏腕社長が設立した会社になります。設立5期目で現在11店舗の運営を行っております。B社の一番の強みはユーザーに合わせた商品の提供を行ったことによつリピート率70%以上というB社のファンの多さです。今後もファンを大切にしながら事業の拡大をし続けていく企業になります。</p>
+		    </div>
+		  </div><!-- /.item -->
+		  <div class="item">
+		    <div class="item-img">
+					<h3>特殊商材を扱う営業会社C社</h3>
+					<img src="img/companyC.png" alt="">
+				</div>
+		    <div class="item-body">
+		      <p>単価100万円以上の商材を扱う上場企業のC社は日本の文化水準の向上を行っています。また扱う商材が特殊であるため真の営業力を問われるビジネスを行う必要があるので、入社後あなたのビジネススキルが向上すること間違い無しの企業になります。</p>
+		    </div>
+		  </div><!-- /.item -->
+		  <div class="item">
+		    <div class="item-img">
+					<h3>医薬・化粧品会社D社</h3>
+					<img src="img/companyD.png" alt="">
+				</div>
+		    <div class="item-body">
+		      <p>調剤薬局業界No.1のD社は産休取得率100%の女性が働きやすい会社になります。プロデュースからお客様の提案まで全て行い、現在売上高2000億以上の会社です。今後も次代のニーズに合わせて進化し続け、さらに社員の働き方改革にも力を入れていきます。</p>
+		    </div>
+		  </div><!-- /.item -->
+		</div><!-- /.items3 -->
+	</div>
+	<div id="flow">
+		<h2>イベントの流れ</h2>
+		<div class="detail">
+			<div class="inline-block">
+		    <p>1</p>
+			</div>
+			<div class="inline-block">
+		    <h3>内定獲得ノウハウ講座</h3>
+				<p>今後社会に出てからも通用するノウハウを一挙大公開！学校では教えてくれない就活アドバイスをお話しします。</p>
+			</div>
+			<div class="inline-block">
+		    <img src="img/flow1.png" alt="">
+			</div>
+		</div>
+		<div class="detail">
+			<div class="inline-block">
+		    <p>2</p>
+			</div>
+			<div class="inline-block">
+		    <h3>多数の人気企業をご紹介</h3>
+				<p>イベント参加企業の自己紹介プレゼンがあります。社長や担当者の生の声が聞ける貴重な機会です。</p>
+			</div>
+			<div class="inline-block">
+		    <img src="img/flow2.png" alt="">
+			</div>
+		</div>
+		<div class="detail">
+			<div class="inline-block">
+		    <p>3</p>
+			</div>
+			<div class="inline-block">
+		    <h3>グループワーク</h3>
+				<p>参加企業独自のグループワークをその場ですべて体験できます。またそのグループワークを社長や人事が直接見て当日オファーの判断材料にしていきます。</p>
+			</div>
+			<div class="inline-block">
+		    <img src="img/flow3.png" alt="">
+			</div>
+		</div>
+		<div class="detail">
+			<div class="inline-block">
+		    <p>4</p>
+			</div>
+			<div class="inline-block">
+		    <h3>個別面談・座談会</h3>
+				<p>グループワーク後にオファーを獲得した方は企業様と直接面談をすることができます。その場で意気投合すれば内定獲得も夢じゃないです。また、オファーがもらえなくても問題ございません。企業の人事やプロのコンサルタントと就活に関する座談会を実施しますので、そちらで気になることなどを聞いていただければと思います。</p>
+			</div>
+			<div class="inline-block">
+		    <img src="img/flow4.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="voice">
+		<h2><img src="img/voice_ttl.svg" alt="User's Voice">こんなイベントも<br class="sp">実施している</h2>
+		<div class="container">
+			<ul class="slider pc">
+				<li>
+					<ul>
+						<li>
+							<div class="txt">
+								<h3>ジョブチャレ2021</h3>
+								<p>ジョブチャレでは、様々な種類のイベントを開催しております。あなたに合ったイベントのぜひご参加ください。</p>
+							</div>
+							<figure><img src="img/event1.jpg"></figure>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<div class="txt">
+								<h3>理系特化型</h3>
+								<p>理系特化型のイベントでは、ITコンサルやWebアプリ制作など理系を求める企業様が参加します。</p>
+							</div>
+							<figure><img src="img/event2.jpg"></figure>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<div class="txt">
+								<h3>IT業界特化型</h3>
+								<p>IT業界特化型のイベントでは、文系理系関係なくITを志望している学生が集まります。文系未経験でも入社可能な企業様も多数参加されます。</p>
+							</div>
+							<figure><img src="img/event3.jpg"></figure>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<div class="txt">
+								<h3>ベンチャー特化型</h3>
+								<p>成長を求めるなら、このイベントに参加しましょう。急成長ベンチャーや新入社員にも裁量権を与えるような企業様がご参加されます。</p>
+							</div>
+							<figure><img src="img/event4.jpg"></figure>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<div class="txt">
+								<h3>サービス業界特化型</h3>
+								<p>サービス業界特化型のイベントでは、お客様のためという「For You」の精神を持ち合わせた学生が参加します。企業様もよりお客様第一に考えている企業様がご参加いたします。</p>
+							</div>
+							<figure><img src="img/event5.jpg"></figure>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<div class="txt">
+								<h3>高学歴特化型</h3>
+								<p>高学歴限定イベントは、コンサル業界や広告業界などの、地頭が必要になってくる仕事を行う企業様にご参加いただきます。ただ、G-MARCH以上限定のため、ご参加いただけない可能性もございます。</p>
+							</div>
+							<figure><img src="img/event6.jpg"></figure>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<div class="txt">
+								<h3>女性限定</h3>
+								<p>女性が活躍する社会を作っていくような企業様が参加します。女性の働きやすさであったり、女性の役員が多い企業様などがご参加いたします。</p>
+							</div>
+							<figure><img src="img/event7.jpg"></figure>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<div class="txt">
+								<h3>体育会限定</h3>
+								<p>今までのスポーツ経験を活かした仕事ができる企業様が参加いたします。体育会系優遇の会社のみが参加しますので、体育会系の学生はぜひ参加ください。</p>
+							</div>
+							<figure><img src="img/event8.jpg"></figure>
+						</li>
+					</ul>
+				</li>
+			</ul>
+<!-- SP Slider-->
+<ul class="slider sp">
+	<li>
+		<div class="txt">
+			<h3>ジョブチャレ2021</h3>
+			<figure><img src="img/event1.jpg"></figure>
+			<p>ジョブチャレでは、様々な種類のイベントを開催しております。あなたに合ったイベントのぜひご参加ください。</p>
+		</div>
+	</li>
+	<li>
+		<div class="txt">
+			<h3>理系特化型</h3>
+			<figure><img src="img/event2.jpg"></figure>
+			<p>理系特化型のイベントでは、ITコンサルやWebアプリ制作など理系を求める企業様が参加します。</p>
+		</div>
+	</li>
+	<li>
+		<div class="txt">
+			<h3>IT業界特化型</h3>
+			<figure><img src="img/event3.jpg"></figure>
+			<p>IT業界特化型のイベントでは、文系理系関係なくITを志望している学生が集まります。文系未経験でも入社可能な企業様も多数参加されます。</p>
+		</div>
+	</li>
+	<li>
+		<div class="txt">
+			<h3>ベンチャー特化型</h3>
+			<figure><img src="img/event4.jpg"></figure>
+			<p>成長を求めるなら、このイベントに参加しましょう。急成長ベンチャーや新入社員にも裁量権を与えるような企業様がご参加されます。</p>
+		</div>
+	</li>
+	<li>
+		<div class="txt">
+			<h3>サービス業界特化型</h3>
+			<figure><img src="img/event5.jpg"></figure>
+			<p>サービス業界特化型のイベントでは、お客様のためという「For You」の精神を持ち合わせた学生が参加します。企業様もよりお客様第一に考えている企業様がご参加いたします。</p>
+		</div>
+	</li>
+	<li>
+		<div class="txt">
+			<h3>高学歴限定</h3>
+			<figure><img src="img/event6.jpg"></figure>
+			<p>高学歴限定イベントは、コンサル業界や広告業界などの、地頭が必要になってくる仕事を行う企業様にご参加いただきます。ただ、G-MARCH以上限定のため、ご参加いただけない可能性もございます。</p>
+		</div>
+	</li>
+	<li>
+		<div class="txt">
+			<h3>女性限定</h3>
+			<figure><img src="img/event7.jpg"></figure>
+			<p>女性が活躍する社会を作っていくような企業様が参加します。女性の働きやすさであったり、女性の役員が多い企業様などがご参加いたします。</p>
+		</div>
+	</li>
+	<li>
+		<div class="txt">
+			<h3>体育会限定</h3>
+			<figure><img src="img/event8.jpg"></figure>
+			<p>今までのスポーツ経験を活かした仕事ができる企業様が参加いたします。体育会系優遇の会社のみが参加しますので、体育会系の学生はぜひ参加ください。</p>
+		</div>
+	</li>
+</ul>
+		</div>
+	</div>
+	<div id="epi">
+		<h2>概要</h2>
+		<table>
+		  <tr>
+		    <th>服装</th>
+		    <td>自由</td>
+		  </tr>
+		  <tr>
+		    <th>持ち物</th>
+		    <td>筆記用具、証明写真</td>
+		  </tr>
+		  <tr>
+		    <th>対象年次</th>
+		    <td>2021年卒業予定の学生</td>
+		  </tr>
+		  <tr>
+		    <th>主催企業</th>
+		    <td>株式会社リアステージ</td>
+		  </tr>
+		</table>
+		<h2>場所</h2>
+		<h3>東京会場</h3>
+		<table>
+		  <tr>
+		    <th>住所</th>
+		    <td>東京都千代田区三番町3-8 泉館三番町5階</td>
+		  </tr>
+		  <tr>
+		    <th>最寄駅</th>
+		    <td>半蔵門駅</td>
+		  </tr>
+		  <tr>
+		    <th>アクセス</th>
+		    <td>半蔵門駅から徒歩5分</td>
+		  </tr>
+		</table>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6481.004410716376!2d139.7399835660816!3d35.68925735684582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c6f052de301%3A0x19585d7b4f2f40f9!2z44CSMTAyLTAwNzUg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65LiJ55Wq55S677yT4oiS77yYIOaziemkqOS4ieeVqueUujXpmo4!5e0!3m2!1sja!2sjp!4v1545284190896" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<h3>大阪会場</h3>
+		<table>
+		  <tr>
+		    <th>住所</th>
+		    <td>大阪府大阪市北区豊崎3-9-7 いずみビル7F</td>
+		  </tr>
+		  <tr>
+		    <th>最寄駅</th>
+		    <td>梅田駅</td>
+		  </tr>
+		  <tr>
+		    <th>アクセス</th>
+		    <td>梅田駅から徒歩7分</td>
+		  </tr>
+		</table>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.828201620977!2d135.49715361523232!3d34.70951288043231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6908792682d%3A0x2d004fab76ea75f0!2z44CSNTMxLTAwNzIg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy66LGK5bSO77yT5LiB55uu77yZ4oiS77yXIOOBhOOBmuOBv-ODk-ODqyA3Rg!5e0!3m2!1sja!2sjp!4v1570000890410!5m2!1sja!2sjp" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<table>
+		  <tr>
+		    <th>住所</th>
+		    <td>大阪府大阪市中央区南船場2-4-10 ネストホテル大阪心斎橋2F</td>
+		  </tr>
+		  <tr>
+		    <th>最寄駅</th>
+		    <td>心斎橋駅</td>
+		  </tr>
+		  <tr>
+		    <th>アクセス</th>
+		    <td>心斎橋駅から徒歩6分</td>
+		  </tr>
+		</table>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1707963627764!2d135.50358491542568!3d34.67563859206727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e717d023b9dd%3A0x8fdf9054ab32cd20!2z44ON44K544OI44Ob44OG44Or5aSn6Ziq5b-D5paO5qmL!5e0!3m2!1sja!2sjp!4v1533290718813" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+	</div>
+	<div id="question">
+		<h2>よくある質問</h2>
+		<h3>イベントに参加するにはどうすればいいですか？</h3>
+		<p>登録フォームから参加希望の日程を選択肢、ご予約することで参加することができます。ただ、人気イベントのため席数に限りがあるため、ご予約はお早めに。</p>
+		<h3>無料で参加できるのですか？</h3>
+		<p>はい。全てのイベントは無料で参加できます。</p>
+		<h3>イベントに複数回参加することはできますか？</h3>
+		<p>はい。可能です。毎回参加する企業は違いますので、複数回参加して様々な企業様との選考を受けることはできます。</p>
+	</div>
+	<footer>
+		<div class="innr">
+		<dl class="pc">
+			<dt>運営会社</dt>
+			<dd>株式会社リアステージ<br>
+			東京都千代田区三番町3−8 泉館三番町5階　|　TEL：03-4563-6350　|　有料職業紹介免許:13-ユ-306938</dd>
+		</dl>
+		<div class="sp">
+			<strong>運営会社</strong>株式会社リアステージ<br>
+			<span>東京都千代田区三番町3−8 泉館三番町5階<br>TEL：03-4563-6350<br>有料職業紹介免許:13-ユ-306938</span>
+		</div>
+		<div class="pmark"><img src="img/p.png" alt="プライバシーマーク"></div>
+		<span class="copy">Copyright &copy; JOB COMMIT Inc. All Rights Reserved.</span>
+		</div>
+	</footer>
+	<div id="page-top"><a href="#header"><img src="img/ftcv.png" alt="無料カウンセリング" class="pc"><img src="img/ftcvs.png" alt="無料カウンセリング" class="sp"></a></div>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2G8TMV"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	</body>
+</html>
