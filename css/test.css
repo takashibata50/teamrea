@@ -1,0 +1,42 @@
+.item3{
+  margin:0 auto 32px;
+}
+.items3 .item {
+  display: flex;
+  margin:0 auto 32px;
+}
+.items3 .item:nth-child(odd) {
+  /* flex-direction: row-reverse; */
+}
+.items3 .item-img {
+  width: 50%;
+  padding: 0 12px;
+}
+
+/*---------------------------------------------------------
+							company
+---------------------------------------------------------*/
+#company{
+	padding:50px 0 90px;
+}
+#company h2{
+	color:#0097b5;
+	font-size:42px;
+	font-weight:500;
+	max-width:1000px;
+	margin:0 auto 32px;
+	text-align:center;
+	position:relative;
+}
+#company h3{
+	color:#333333;
+	font-size:28px;
+	max-width:1000px;
+	margin:0 auto 20px;
+}
+#company p{
+	color:#333333;
+	/* font-size:28px; */
+	max-width:1000px;
+	margin:0 auto 32px;
+}
